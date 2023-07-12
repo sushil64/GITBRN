@@ -1,0 +1,91 @@
+
+<!-- 
+    GIT is developed using C/C++ it is command based!!
+    Git is used for tracking the repository folder.
+for Git Codes -> https://gitcheatsheet.org
+
+-> All changes are stored in hidden(command+shift+.) git folder in the project folder.
+
+* git status <- Shows valuable information, like which files are Untracked, Unmodified, Modified, Staged or Unstaged in the current branch, the current branch name, or whether the current branch is up-to-date, ahead or behind the remote branch.
+
+* git init <- Create a new local repository
+
+* git config --global user.email pratapsushil@gmail.com
+
+* git config --global user.name “Sushil Pratap”
+    
+U -> Untracked **
+.DS_Store is a system file -> no need to track
+ 
+* git add .   <- staging ....[1]
+        -> * git status
+A -> Added for tracking **     
+added to staging <- getting ready to commit
+
+* git commit -m "created new file"  ......[2]
+ git commit <- pls note down the changes.
+ when give commit give a message -> git commit - m "----message----"
+ 
+* git save -> pls store this   ........[3]
+
+* git log -> Displays the history 
+* git log --oneline -> Displays in one line
+M -> Modified **
+
+** Every React Project is a Repository by default!!
+-->
+<!-- ---------------------------------------------------------------------------------------------
+    ** Git Ignore:
+
+-> git ignore - files included in this are ignored by the version control to make any changes.
+ 
+* .gitignore <- create a folder and include files/folders.
+
+
+** Git Branches: 
+    Last commit is referred as Branch -> if u have 10 commits 10th commit is called a Branch
+    -> we can a give a name to the branch, default name will be Master
+* git branch -m {give any name}   
+     git branch -m main 
+
+     To create a seperate copy of the branch. 
+* git branch my-new-branch -> a branch has been added to the last commit.
+
+* git branch -a <- Lists both local and remote branches, * represents current branch.
+
+* git checkout -b my-new-branch <- Create a branch and checkout (switch) to it
+Creates and checks out (switch) to a new branch named "my-new-branch".
+
+Git branch Delete:
+* git branch -d branch-to-delete <- 
+---------------------------------------------------------------------------------------------
+-->
+<!-- 
+** Stash, Reset, Remote Repository, Pull, Push, Clone:
+
+Stash & Reset -> Both are useful for Deleting.
+
+1. Stash -> Is used to Delete UnCommited changes. -> Ex: Accidental 
+* git stash
+* git stash list 
+* git stash apply stash@{0}
+
+
+2. Reset -> Is used to Delete Commited changes. -> Ex: Some issues after few commits & would like to go back.
+   based on the ID we can Reset. WARNING - its a permanant delete.
+* git reset --hard abc123 <- from the id.
+
+
+3. Remote Repository:-
+
+Repository in GIT hub <- an empty trackable Folder
+
+ ** Clone:- To create a local copy from RRepos  - Remote Repository to Local Rps
+
+ -> Repository in system  - Local Repository -> a copy of RRepos
+
+** PUSH:- LOCAL Repos to ->> REMOTE Repos [L]->[R]
+
+** PULL:- REMOTE Repos to ->>  LOCAL Repos [R]->[L]
+
+ -->
